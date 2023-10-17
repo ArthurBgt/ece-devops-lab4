@@ -23,9 +23,9 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - name: Set working directory
-      run: cd ${{ github.workspace }}/ece-devops-lab4
+      run: cd ${{ github.workspace }}
     - run: npm ci
-      working-directory: ${{ github.workspace }}/ece-devops-lab4
+      working-directory: ${{ github.workspace }}
     - run: npm test
-      working-directory: ${{ github.workspace }}/ece-devops-lab4
+      working-directory: ${{ github.workspace }}
 
