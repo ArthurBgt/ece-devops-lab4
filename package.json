@@ -1,0 +1,15 @@
+{
+  "name": "ece-devops-lab4",
+  "version": "1.0.0",
+  "description": "It is a basic NodeJS web application exposing REST API that creates and stores user parameters in [Redis database](https://redis.io/).",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
