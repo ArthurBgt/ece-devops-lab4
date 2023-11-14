@@ -1,15 +1,27 @@
 {
-  "name": "ece-devops-lab4",
-  "version": "1.0.0",
-  "description": "It is a basic NodeJS web application exposing REST API that creates and stores user parameters in [Redis database](https://redis.io/).",
-  "main": "index.js",
-  "directories": {
-    "test": "test"
-  },
+  "name": "ece-userapi",
+  "version": "1.1.0",
+  "description": "Devops Lab4",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "test": "./node_modules/.bin/mocha test/*.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Arthur Beguet, Solveig Berling",
+  "license": "",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mixme": "^0.5.4",
+    "redis": "^3.1.2"
+  },
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "chai-http": "^4.3.0",
+    "eslint": "^8.0.0",
+    "eslint-plugin-mocha": "^9.0.0",
+    "mocha": "^9.1.2"
+  },
+  "mocha": {
+    "timeout": 10000
+  }
 }
